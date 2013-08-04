@@ -1,0 +1,834 @@
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
+    display: block;
+}
+audio, canvas, video {
+    display: inline-block;
+}
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+[hidden] {
+    display: none;
+}
+html {
+    font-family: sans-serif;
+}
+body {
+    margin: 0;
+}
+a:focus {
+    outline: thin dotted;
+}
+a:active, a:hover {
+    outline: 0 none;
+}
+h1 {
+    font-size: 2em;
+}
+abbr[title] {
+    border-bottom: 1px dotted;
+}
+b, strong {
+    font-weight: bold;
+}
+dfn {
+    font-style: italic;
+}
+mark {
+    background: none repeat scroll 0 0 #FFFF00;
+    color: #000000;
+}
+code, kbd, pre, samp {
+    font-family: monospace,serif;
+    font-size: 1em;
+}
+pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+q {
+    quotes: "“" "”" "‘" "’";
+}
+small {
+    font-size: 80%;
+}
+sub, sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+sup {
+    top: -0.5em;
+}
+sub {
+    bottom: -0.25em;
+}
+img {
+    border: 0 none;
+}
+svg:not(:root) {
+    overflow: hidden;
+}
+figure {
+    margin: 0;
+}
+fieldset {
+    border: 1px solid #C0C0C0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+}
+legend {
+    border: 0 none;
+    padding: 0;
+}
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+    margin: 0;
+}
+button, input {
+    line-height: normal;
+}
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+    cursor: pointer;
+}
+button[disabled], input[disabled] {
+    cursor: default;
+}
+input[type="checkbox"], input[type="radio"] {
+    padding: 0;
+}
+input[type="search"] {
+    -moz-box-sizing: content-box;
+}
+button::-moz-focus-inner, input::-moz-focus-inner {
+    border: 0 none;
+    padding: 0;
+}
+textarea {
+    overflow: auto;
+    vertical-align: top;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+@font-face {
+    font-family: "GillSans";
+    src: url("/fonts/GillSans.ttc");
+}
+@font-face {
+    font-family: "gothambold1";
+    src: local("Gotham-Bold"), url("http://www.fontsforweb.com/public/fonts/5903/gothambold1.woff") format("woff"), url("http://www.fontsforweb.com/public/fonts/5903/gothambold1.ttf") format("truetype");
+}
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+h1, h2 {
+    color: #555555;
+}
+h3 {
+    color: #333333;
+}
+a.btn {
+    font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    margin-top: 8px;
+    text-decoration: none;
+}
+a.btn.unpadded {
+    margin-top: 3px;
+}
+a.btn.unpadded:focus, a.btn.unpadded:active, a.btn.unpadded.active {
+    padding-bottom: 0.8em;
+}
+.group:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+.group {
+    display: inline-block;
+}
+* html .group {
+    height: 1%;
+}
+.group {
+    display: block;
+}
+.strike {
+    text-decoration: line-through;
+}
+table.wide {
+    margin: auto;
+    width: 90%;
+}
+table.pretty {
+    background: none repeat scroll 0 0 whitesmoke;
+    border-collapse: collapse;
+    margin: 1em 1em 1em 2em;
+}
+table.pretty th, table.pretty td {
+    border: 1px solid gainsboro;
+    padding: 0.2em;
+}
+table.pretty th {
+    background: none repeat scroll 0 0 gainsboro;
+    text-align: left;
+}
+table.pretty caption {
+    margin-left: inherit;
+    margin-right: inherit;
+}
+form {
+    border-radius: 8px 8px 8px 8px;
+    box-shadow: 0 3px 15px #666666;
+    margin: 0 auto;
+    padding: 10px;
+    width: 740px;
+}
+form input[type="text"] {
+    border: 1px solid #CCCCCC;
+    border-radius: 3px 3px 3px 3px;
+    font-size: 18px;
+    padding: 0.5em 0.8em;
+}
+form textarea {
+    border: 1px solid #CCCCCC;
+    border-radius: 3px 3px 3px 3px;
+    font-size: 18px;
+}
+form input.btn-submit {
+    background-color: #2DC1D5;
+    border: medium none;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.45) inset, 0 2px 2px rgba(0, 0, 0, 0.25);
+    color: #FFFFFF;
+    display: inline-block;
+    font-size: 0.9em;
+    font-weight: 500;
+    padding: 0.6em 0.5em;
+    text-align: center;
+    text-shadow: 1px 1px 0 #1D8493;
+    text-transform: uppercase;
+    width: 125px;
+}
+#enroll_form {
+    background-color: #FFFFFF;
+    padding: 0;
+    width: 490px;
+}
+#enroll_form .title {
+    border-bottom: 1px solid #EEEEEE;
+    padding: 1em 1em 0.8em;
+}
+#enroll_form .title a.close {
+    float: right;
+}
+#enroll_form .title h2 {
+    color: #2F353E;
+    margin: 0;
+}
+#enroll_form .content {
+    padding: 1em;
+}
+#enroll_form .content h3 {
+    font-size: 16px;
+    font-weight: normal;
+    margin: 0;
+    padding-bottom: 0.6em;
+}
+#enroll_form label {
+    display: block;
+    padding-bottom: 0.6em;
+    padding-right: 1em;
+}
+#enroll_form input[type="text"] {
+    font-size: 14px;
+    width: 430px;
+}
+#enroll_form textarea {
+    font-size: 14px;
+    height: 80px;
+    width: 450px;
+}
+#enroll_form .content > p.inline {
+    overflow: hidden;
+    padding: 0.2em 0 0.4em;
+}
+#enroll_form .content > p.inline label {
+    float: left;
+    padding-top: 5px;
+    width: 60px;
+}
+#enroll_form .content > p.inline input[type="text"] {
+    float: left;
+    margin-right: 0.4em;
+    width: 150px;
+}
+#enroll_form .footer {
+    background-color: #F5F5F5;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-top: 1px solid #DDDDDD;
+    padding: 1em;
+    text-align: right;
+}
+p {
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-bottom: 1em;
+}
+#container {
+    margin: 0 auto;
+    min-height: 100%;
+    min-width: 1100px;
+}
+.content-container {
+    margin: auto;
+    min-width: 1100px;
+    overflow: hidden;
+}
+#brand {
+    -moz-box-sizing: border-box;
+    margin-left: 145px;
+    margin-top: 8px;
+    min-height: 91px;
+    padding: 1em 3em;
+}
+#brand > a {
+    display: inline-block;
+    margin-top: 0.5em;
+}
+#brand ul#menu {
+    float: right;
+    margin-right: 150px;
+    margin-top: 16px;
+    overflow: hidden;
+}
+#brand ul#menu li {
+    display: block;
+    float: left;
+    margin-right: 1.2em;
+}
+#brand ul#menu li:last-child {
+    margin-right: 0;
+}
+#brand ul#menu li a {
+    color: #8C9299;
+    font-family: "gothambold1","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    margin-left: 1.2em;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+#brand ul#menu li a:hover {
+    text-decoration: underline;
+}
+#brand ul#menu li a.selected {
+    color: #FC793B;
+}
+#footer {
+    -moz-box-sizing: border-box;
+    background: url("/img/bg/footer-bg.png") repeat-x scroll 0 0 transparent;
+    color: #8C9299;
+    font-family: "gothambold1","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    height: 150px;
+    padding-top: 4em;
+    text-align: center;
+    text-transform: uppercase;
+}
+#footer a {
+    color: #8C9299;
+    text-decoration: none;
+}
+#footer a:hover {
+    text-decoration: underline;
+}
+#footer ul.sitemap {
+    margin-bottom: 1em;
+    margin-top: 0;
+    text-align: center;
+}
+#footer ul.sitemap li {
+    display: inline-block;
+    margin-right: 2em;
+}
+.section.inverted {
+    color: #FFFFFF;
+}
+.section.inverted h2, .section.inverted h3 {
+    color: #FFFFFF;
+}
+.section h2 {
+    color: #2F353E;
+    font-family: "gothambold1","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 2em;
+    font-weight: normal;
+    margin: 0;
+    padding-bottom: 1.1em;
+    padding-top: 2.2em;
+    text-align: center;
+    text-transform: uppercase;
+}
+.section h2.left {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 1.8em;
+    font-weight: 500;
+    text-align: left;
+    text-transform: none;
+}
+.section h3 {
+    font-size: 1.4em;
+    margin: 0;
+    padding-bottom: 0.4em;
+}
+#teachers {
+    -moz-box-sizing: border-box;
+    background: none repeat scroll 0 0 #F7F5F2;
+    margin: auto;
+    min-height: 512px;
+}
+#teachers .teacher-list {
+    margin: auto;
+    overflow: hidden;
+    width: 1100px;
+}
+#teachers .teacher-list > div, #teachers .teacher-list > p, #teachers .teacher-list > a, #teachers .teacher-list > form, #teachers .teacher-list > input, #teachers .teacher-list > strong {
+    display: block;
+    float: left;
+}
+#teachers .teacher-list .teacher {
+    font-size: 0.9em;
+    line-height: 1.6em;
+    margin-right: 2em;
+    width: 500px;
+}
+#teachers .teacher-list .teacher img.picture {
+    border: 5px solid #FFFFFF;
+    border-radius: 75px 75px 75px 75px;
+    float: left;
+    margin-right: 1em;
+}
+#teachers .teacher-list .teacher h3 {
+    color: #2F353E;
+}
+#teachers .teacher-list .teacher h3 a {
+    margin-left: 0.5em;
+}
+#teachers .teacher-list .teacher p.quick {
+    color: #FD7037;
+    font-size: 0.9em;
+    font-weight: bold;
+    padding-bottom: 0.5em;
+}
+#teachers .teacher-list .teacher p.full {
+    color: #8C9299;
+    margin-left: calc(145px + 1em);
+}
+#testimonials {
+    background: url("/img/bg/testimonials-bg.png") repeat-x scroll 0 0 transparent;
+    min-height: 480px;
+}
+#testimonials h2 {
+    color: #626975;
+}
+#testimonials .quote-carousel {
+    margin: auto;
+    position: relative;
+    width: 984px;
+}
+#testimonials .quote-carousel .quote-viewport {
+    overflow: hidden;
+    width: 982px;
+}
+#testimonials .quote-carousel .quote-list {
+    width: 1000%;
+}
+#testimonials .quote-carousel .carousel-arrows .arrow-prev {
+    left: -75px;
+    position: absolute;
+    top: 40px;
+}
+#testimonials .quote-carousel .carousel-arrows .arrow-next {
+    left: 0;
+    position: absolute;
+    top: 40px;
+}
+#testimonials .quote {
+    display: inline-block;
+    font-size: 0.9em;
+    line-height: 1.6em;
+    margin-right: 2em;
+    text-align: left;
+    width: 475px;
+}
+#testimonials .quote .body {
+    -moz-box-sizing: border-box;
+    background: url("/img/bg/quote-bg.png") no-repeat scroll 0 0 transparent;
+    color: #8C9299;
+    font-family: 'Josefin Slab',serif;
+    font-size: 1.25em;
+    height: 165px;
+    padding-left: 55px;
+    padding-right: 20px;
+    padding-top: 27px;
+    width: 475px;
+}
+#testimonials .quote .author {
+    margin-left: 0.6em;
+}
+#testimonials .quote .author img {
+    border: 3px solid #FFFFFF;
+    border-radius: 75px 75px 75px 75px;
+    display: inline-block;
+    vertical-align: middle;
+}
+#testimonials .quote .author .info {
+    color: #8C9299;
+    display: inline-block;
+    margin-left: 0.8em;
+    width: 300px;
+}
+#testimonials .quote .author .info .name {
+    font-size: 1.1em;
+}
+#enrollments {
+    background: none repeat scroll 0 0 #F7F5F2;
+    min-height: 710px;
+}
+#enrollments h2 {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+#enrollments table {
+    margin-bottom: 3em;
+}
+#enrollments p {
+    padding-bottom: 1em;
+    text-align: center;
+}
+
+/*=============Landing.css================ */
+
+
+@font-face {
+    font-family: "GillSans";
+    src: url("/fonts/GillSans.ttc");
+}
+@font-face {
+    font-family: "gothambold1";
+    src: local("Gotham-Bold"), url("http://www.fontsforweb.com/public/fonts/5903/gothambold1.woff") format("woff"), url("http://www.fontsforweb.com/public/fonts/5903/gothambold1.ttf") format("truetype");
+}
+#hero {
+    overflow: hidden;
+    position: relative;
+    width: 1000%;
+}
+#hero .promos > div {
+    -moz-box-sizing: border-box;
+    float: left;
+    height: 521px;
+    text-align: center;
+}
+#hero .promos > div .content {
+    margin: auto;
+    padding-top: 130px;
+}
+#hero .promos > div a.btn-cta {
+    -moz-box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 1px inset rgba(117, 106, 99, 0.3);
+    border-radius: 4px 4px 4px 4px;
+    display: block;
+    font-family: "gothambold1","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 1.2em;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 8px;
+    position: relative;
+    text-align: center;
+    width: 292px;
+}
+#hero .promos > div a.btn-cta span {
+    background: -moz-linear-gradient(center top , #FF7D00, #FF6000) repeat scroll 0 0 transparent;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.45) inset, 0 2px 2px rgba(0, 0, 0, 0.25);
+    color: #FFFFFF;
+    display: block;
+    padding: 0.8em 2em;
+    text-shadow: 1px 1px 0 #FF6000;
+}
+#hero .overlay .arrows .arrow-prev {
+    left: 52px;
+    position: absolute;
+    top: 222px;
+}
+#hero .overlay .arrows .arrow-next {
+    left: 9999px;
+    position: absolute;
+    top: 222px;
+}
+#hero .overlay .bullets {
+    left: 203px;
+    position: absolute;
+    top: 461px;
+}
+#hero .overlay .bullets img {
+    margin-right: 0.3em;
+}
+#hero .promo-online {
+    background: url("/img/banners/hero1-bg.png") no-repeat scroll center center / cover #2E1C0D;
+}
+#hero .promo-online .content {
+    width: 971px;
+}
+#hero .promo-online a.btn-cta {
+    top: -32px;
+}
+#hero .promo-ta {
+    background: url("/img/banners/hero2-bg.png") no-repeat scroll center center / cover #2E1C0D;
+}
+#hero .promo-ta .content {
+    width: 1007px;
+}
+#hero .promo-ta a.btn-cta {
+    top: -35px;
+}
+#hero .promo-workshop {
+    background: url("/img/banners/hero3-bg.png") no-repeat scroll center center / cover #2E1C0D;
+}
+#hero .promo-workshop .content {
+    width: 1006px;
+}
+#hero .promo-workshop a.btn-cta {
+    top: -70px;
+}
+#intro {
+    -moz-box-sizing: border-box;
+    min-height: 485px;
+}
+#intro .points {
+    background: none repeat scroll 0 0 #FFFFFF;
+    margin: 0 auto;
+    max-width: 1400px;
+    text-align: center;
+}
+#intro .points .point {
+    display: inline-block;
+    margin: auto 4%;
+    text-align: center;
+    width: 25%;
+}
+#intro .points .point h3 {
+    font-size: 1.5em;
+    font-weight: normal;
+    margin-top: 0.4em;
+}
+#intro .points .point p {
+    color: #9499A0;
+    font-size: 0.9em;
+    line-height: 1.4em;
+    margin-top: 0.4em;
+}
+#learn {
+    -moz-box-sizing: border-box;
+    background: url("/img/bg/courses-bg.png") repeat scroll 0 0 / cover transparent;
+    min-height: 694px;
+}
+#learn h2 {
+    padding-bottom: 1.25em;
+}
+#learn > div {
+    margin: auto;
+    padding-bottom: 1.4em;
+    text-align: center;
+    width: 80%;
+}
+#learn > div .course {
+    display: inline-block;
+    overflow: hidden;
+    text-align: left;
+    width: 48%;
+}
+#learn > div .course > img {
+    float: left;
+}
+#learn > div .course h3 {
+    font-family: "Myriad pro Semibold","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 500;
+}
+#learn > div .course .details {
+    float: left;
+    font-size: 1.1em;
+    margin-top: 0.8em;
+    min-width: 250px;
+    width: calc(99% - 124px);
+}
+#learn > div .course p {
+    font-size: 0.8em;
+    line-height: 1.5em;
+}
+#learn > div .course .sessions {
+    color: #4EFEFF;
+}
+#learn > div .course .btn-learn {
+    background-color: #58FDFF;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.45) inset, 0 2px 2px rgba(0, 0, 0, 0.25);
+    color: #0C5764;
+    font-size: 0.9em;
+    font-weight: 500;
+    padding: 0.5em 1.2em;
+    text-shadow: 1px 1px 0 #8BFEFE;
+}
+#events {
+    background: url("/img/bg/events-bg.png") repeat-x scroll 0 0 transparent;
+    min-height: 541px;
+}
+#events .event-carousel {
+    margin: auto;
+    position: relative;
+    width: 970px;
+}
+#events .event-carousel .event-viewport {
+    overflow: hidden;
+    width: 963px;
+}
+#events .event-carousel .event-list {
+    width: 1000%;
+}
+#events .event-carousel .carousel-arrows .arrow-prev {
+    left: -59px;
+    position: absolute;
+    top: 90px;
+}
+#events .event-carousel .carousel-arrows .arrow-next {
+    left: 0;
+    position: absolute;
+    top: 90px;
+}
+#events .event-list .event {
+    background-color: #DC5A1E;
+    display: inline-block;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    padding-bottom: 1em;
+    text-align: left;
+    width: 305px;
+}
+#events .event-list .event .date {
+    background-color: #2BB9D0;
+    left: 221px;
+    margin-top: -37px;
+    padding: 0.5em;
+    position: relative;
+    text-transform: uppercase;
+    width: 68px;
+    z-index: 10;
+}
+#events .event-list .event h3 {
+    font-size: 1em;
+    padding: 1em 0 0 1em;
+}
+#events .event-list .event h3 a {
+    text-decoration: none;
+}
+#events .event-list .event h3 a:hover {
+    text-decoration: underline;
+}
+#events .event-list .event p {
+    color: #FDF4F0;
+    font-size: 0.8em;
+    line-height: 1.5em;
+    padding: 1em;
+}
+#events .event-list .event a {
+    color: white;
+}
+
+
+/* ===== notify.css ==== */
+
+
+#notify {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    font-family: sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    left: 0;
+    line-height: 50px;
+    overflow: hidden;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    visibility: hidden;
+    width: 100%;
+    z-index: 99999;
+}
+#notify, #notify-placeholder {
+    transition: height 1s ease-in-out 0s;
+}
+#notify.notify-visible, .notify-visible {
+    height: 50px;
+    visibility: visible;
+}
+#notify.notify-hidden, .notify-hidden {
+    border: 0 none;
+    height: 0;
+    visibility: visible;
+}
+.notify-error {
+    background: -moz-linear-gradient(center top , #CC0000 0%, #BA0000 100%) repeat scroll 0 0 transparent;
+    border-bottom: 1px solid #9F0000;
+    color: #FFFFFF;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+.notify-success {
+    background: -moz-linear-gradient(center top , #69C910 0%, #299A0B 100%) repeat scroll 0 0 transparent;
+    border-bottom: 1px solid #5FA300;
+    color: #FFFFFF;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.7);
+}
+.notify-alert {
+    background: -moz-linear-gradient(center top , #FCF085 1%, #EDDA63 100%) repeat scroll 0 0 transparent;
+    border-bottom: 1px solid #E5CA1E;
+    color: #222222;
+    text-shadow: 0 1px 2px rgba(255, 255, 255, 0.7);
+}
+.notify-basic {
+    background: -moz-linear-gradient(center top , #A3A3A3 0%, #777777 100%) repeat scroll 0 0 transparent;
+    border-bottom: 1px solid #999999;
+    color: #FFFFFF;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.7);
+}
+.notify-alert span {
+    background-image: url("./img/loading.gif");
+    background-position: 2px 2px;
+    background-repeat: no-repeat;
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+}
+.notify-close {
+    background: url("/img/close-note.png") no-repeat scroll 10px 10px transparent;
+    float: right;
+    height: 40px;
+    margin: 5px;
+    width: 40px;
+}
+.notify-hidden .notify-close {
+    display: none;
+}
+#notify-placeholder {
+    background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+}
+
+
+
