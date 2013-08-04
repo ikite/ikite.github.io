@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>{{ page.title }}</title>
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<meta name="description" content="Android iOS professional hands-on training">
+    	<meta name="author" content="iKite">
+        <!-- Bootstrap core CSS -->
+    	<link href="/css/bootstrap.min.css" rel="stylesheet">
+    	<link href="/css/bootstrap-glyphicons.css" rel="stylesheet">
+    	<link href="/css/bootstrap.css" rel="stylesheet">
+    	<link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Josefin+Slab">
+	</head>
+	<body>
+		<div id='header'>
+			<div class='content-container'>
+				<div id="brand">
+					{% include _brand.html %}
+				</div>
+				<div id='hero'>
+					{% include _promos.html %}
+				</div>
+			</div>
+		</div>
+		<div class='content-container' id='container'>
+			<div class='section' id='intro'>
+				<h2>What is iKite?</h2>
+				{% include _points.html %}
+			</div>
+			<div class='section inverted' id='learn'>
+				<h2>What can I learn?</h2>
+				{% include _courses.html %}
+			</div>
+			<div class='section inverted' id='events'>
+				<h2>What's happening now?</h2>
+				{% include _events.html %}
+			</div>
+			<div class='section' id='teachers'>
+				<h2>The Teachers</h2>
+				{% include _teachers.html %}
+			</div>
+			<div class='section' id='testimonials'>
+				<h2>What our students say</h2>
+				{% include _quotes.html %}
+			</div>
+			<div id='overlays' style='display:none'>
+				{% include _enroll_form.html %}
+			</div>
+		</div>
+		<div class='content-container' id='footer'>
+			<ul class='sitemap'>
+				<li><a href="/">Home</a></li>
+				<li><a href="http://blog.ikite.com.au">Blog</a></li>
+				<li><a href="/#learn">Courses</a></li>
+				<li><a href="/#consulting">Consulting</a></li>
+				<li><a href="/#intro">Philosophy</a></li>
+				<li><a href="/#teachers">Team</a></li>
+			</ul>
+			<p class='copyright'>Copyright &copy; 2013 iKite, Pty. Ltd. All Rights Reserved.</p>
+		</div>
+		<script src="/js/jquery.js" type="text/javascript"></script>
+		<script src="/js/jquery.lightbox_me.js" type="text/javascript"></script>
+		<script src="/js/jquery.timer.js" type="text/javascript"></script>
+		<script src="/js/notify.js" type="text/javascript"></script>
+		<script src="/js/hero-carousel.js" type="text/javascript"></script>
+		<script src="/js/item-carousel.js" type="text/javascript"></script>
+		<script src="/js/application.js" type="text/javascript"></script>
+		<script src="/js/bootstrap.min.js" type="text/javascript"></script>
+
+	</body>
+</html>

@@ -1,0 +1,31 @@
+<form method="post" id="enroll_form" action="/courses/enroll" protect_from_csrf="true" accept-charset="UTF-8" data-remote="true">
+	<input value="8753cf73093f909fb766c452c0e7e4e2ccda95ea19a347805f92b66310cca687" name="authenticity_token" type="hidden" />
+	<div class='title'>
+		<a class="close" href="#"><img src="/img/close.png" /></a>
+		<h2>Class Enrollment</h2>
+	</div>
+	<div class='content'>
+		<h3>Please fill out the information below and we will contact you with more details.</h3>
+		<p class='inline'>
+			<label for="enroll_request_first_name">Name:</label>
+			<input placeholder="First" required="required" id="enroll_request_first_name" name="enroll_request[first_name]" type="text" />
+			<input placeholder="Last" required="required" id="enroll_request_last_name" name="enroll_request[last_name]" type="text" />
+		</p>
+		<p class='inline'>
+			<label for="enroll_request_email">Email: </label>
+			<input placeholder="john@doe.com" required="required" id="enroll_request_email" name="enroll_request[email]" type="text" />
+		</p>
+		<p>
+			<label for="enroll_request_info">Describe your experience level and what you want to build:</label>
+			<textarea required="required" id="enroll_request_info" name="enroll_request[info]" rows="" cols=""></textarea>
+		</p>
+		<p>
+			<label for="enroll_request_comments">Comments or questions?</label>
+			<textarea id="enroll_request_comments" name="enroll_request[comments]" rows="" cols=""></textarea>
+		</p>
+	</div>
+	<div class='footer'>
+		<input id="enroll_request_course_name" name="enroll_request[course_name]" type="hidden" />
+		<input class="btn btn-submit" value="Submit" type="submit" />
+	</div>
+</form>
